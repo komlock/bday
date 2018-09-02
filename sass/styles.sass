@@ -1,0 +1,113 @@
+$black: #000 
+$white: #fff
+$blue: #6897A1//rgba(137, 198, 220, 1)
+$green: #81B053//lighten(#00c9a7, 15%)
+$purple: #5F558B
+$d-green: #637430
+$l-blue: #AEB5AF
+$red: #D82C4E
+$deep-red: #BC2F49
+$orange: #F19258
+
+
+$shadow: 0px 0px 15px 1px rgba(black, 0.15)
+$shadow-text: 0px 15px 1px rgba(black, 0.15)
+    
+    
+* 
+    margin: 0
+    padding: 0
+    border: 0
+
+body 
+    font-family: 'Monoton', sans-serif
+    height: 200vh
+
+h2
+    font-size: 2em
+
+.p5Canvas
+    position: fixed
+    opacity: 0
+    //top: 100vh
+    z-index: 5
+
+
+.hero-text
+    position: absolute
+    top: 25vh
+    left: 0
+    right: 0
+    bottom: 0
+    color: $orange
+    font-size: 22vw
+    text-align: center
+    line-height: 1
+    z-index: 10
+    margin: 0
+    text-shadow: $shadow-text
+
+    hr
+        background: $deep-red
+        box-shadow: $shadow
+        height: 2rem
+        width: 50%
+        margin: 0 auto
+        position: relative
+        border-radius: 1rem
+        margin-top: 1rem
+        
+        &#mid 
+            width: 35%
+            margin-top: 2rem
+        &#end
+            width: 20%
+            margin-top: 2rem
+
+
+.bg 
+    opacity: 1
+    position: fixed
+    height: 100vh
+    z-index: -1
+    width: 100%
+    display: grid
+    grid-gap: 0
+    grid-template-columns: repeat(5, 1fr)
+    grid-template-rows: repeat(8, 1fr)
+    //.tile
+
+    .green
+        background: $green
+
+    .blue
+        background: $blue
+
+    .purple
+        background: $purple
+    
+    .d-green
+        background: $d-green
+
+    .l-blue
+        background: $l-blue
+    .red
+        background: $red
+    
+
+.sec
+    position: absolute
+    top: 100vh
+    height: 100vh
+    width: 100%
+    z-index: 11
+    display: flex
+    justify-content: center
+    align-items: center
+    
+    .bday 
+        font-size: 4em
+        font-weight: 900
+        letter-spacing: 5px
+        color: $red
+        text-shadow: $shadow-text
