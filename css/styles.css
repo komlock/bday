@@ -84,6 +84,7 @@ h2 {
   -ms-flex-align: center;
   align-items: center; }
   .sec .bday {
+    text-align: center;
     font-size: 8vw;
     font-weight: 900;
     letter-spacing: 5px;
