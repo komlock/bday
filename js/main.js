@@ -31,7 +31,7 @@ class confetti {
   }
 
   update() {
-    this.vel.limit(this.mass * 2)
+    this.vel.limit(this.mass * 10)
     this.vel.add(this.acc)
     this.pos.add(this.vel)
     this.acc.mult(0)
