@@ -52,10 +52,17 @@ let confetty = []
 
 function setup() {
   createCanvas(windowWidth, windowHeight)
-  for (let i = 0; i < 1000; i++) {
+  let amount
+  if (windowWidth < 600) {
+    amount = 400
+  } else {
+    amount = 1000
+  }
+  for (let i = 0; i < amount; i++) {
     confetty.push(new confetti)
     confetty[i].randomise()
   }
+  print(confetty.length)
 }
 
 function draw() {
